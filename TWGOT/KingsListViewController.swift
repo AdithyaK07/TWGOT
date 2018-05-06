@@ -8,15 +8,40 @@
 
 import UIKit
 
-class KingsListViewController: UIViewController {
+protocol DatasourceDelegate {
+    func updatedDatesource()
+}
+
+class KingsListViewController: UIViewController,UITableViewDelegate,UITableViewDataSource,DatasourceDelegate {
+    
     let kingsListViewModel = KingsListViewModel()
 
+    @IBOutlet weak var kingsListTableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        kingsListViewModel.viewDelegate = self
         kingsListViewModel.getListOfBattles()
     }
 
-
-
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+       return kingsListViewModel.kings.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "kingsRatings", for: indexPath) as! KingsListTableViewCell
+       let king = kingsListViewModel.kings[indexPath.row]
+       cell.kingNameLabel.text = king.name
+       cell.ratingsLabel.text = String(format: "%.2f", king.ratingScore)
+        cell.victoryScoreLabel.text = "\(king.victories)"
+        cell.attacksScoreLabel.text = "\(king.attacks)"
+        cell.defendsScoreLabel.text =  "\(king.defends)"
+        return cell
+    }
+    
+    func updatedDatesource() {
+        DispatchQueue.main.async {
+            self.kingsListTableView.reloadData()
+        }
+    }
 }

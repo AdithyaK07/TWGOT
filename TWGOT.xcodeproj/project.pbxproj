@@ -123,8 +123,8 @@
 			children = (
 				04AA774D209EBEF000DB65F0 /* AppDelegate.swift */,
 				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
-				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
 				04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */,
+				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
 				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
 				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
 				04AA7782209EC7BD00DB65F0 /* TWService.swift */,

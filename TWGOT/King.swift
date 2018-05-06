@@ -10,10 +10,15 @@ import Foundation
 
 class King {
     var name : String = ""
-    var ratingScore : Int = 400
+    var ratingScore : Double = 400
     var attacks : Int = 0
     var defends : Int = 0
+    var victories : Int = 0
     var battlesList : [String] = [String]()
+    
+    init(withName nameString:String) {
+        name = nameString
+    }
     
 }
 
