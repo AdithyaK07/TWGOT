@@ -8,12 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		04AA774E209EBEF000DB65F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA774D209EBEF000DB65F0 /* AppDelegate.swift */; };
-		04AA7750209EBEF000DB65F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA774F209EBEF000DB65F0 /* ViewController.swift */; };
 		04AA7753209EBEF000DB65F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7751209EBEF000DB65F0 /* Main.storyboard */; };
 		04AA7755209EBEF000DB65F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7754209EBEF000DB65F0 /* Assets.xcassets */; };
 		04AA7758209EBEF000DB65F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7756209EBEF000DB65F0 /* LaunchScreen.storyboard */; };
 		04AA7763209EBEF100DB65F0 /* TWGOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7762209EBEF100DB65F0 /* TWGOTTests.swift */; };
 		04AA776E209EBEF100DB65F0 /* TWGOTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA776D209EBEF100DB65F0 /* TWGOTUITests.swift */; };
+		04AA777C209EC04E00DB65F0 /* KingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */; };
+		04AA777F209EC34300DB65F0 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777E209EC34300DB65F0 /* Battle.swift */; };
+		04AA7781209EC50900DB65F0 /* TWServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7780209EC50900DB65F0 /* TWServiceManager.swift */; };
+		04AA7783209EC7BD00DB65F0 /* TWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7782209EC7BD00DB65F0 /* TWService.swift */; };
+		04AA7785209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */; };
+		04AA7786209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */; };
+		04AA7787209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */; };
+		04AA778B209ED1BC00DB65F0 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA778A209ED1BC00DB65F0 /* King.swift */; };
+		04AA7791209ED77700DB65F0 /* TWDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7790209ED77700DB65F0 /* TWDataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +44,6 @@
 /* Begin PBXFileReference section */
 		04AA774A209EBEF000DB65F0 /* TWGOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWGOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA774D209EBEF000DB65F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		04AA774F209EBEF000DB65F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		04AA7752209EBEF000DB65F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		04AA7754209EBEF000DB65F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		04AA7757209EBEF000DB65F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +54,13 @@
 		04AA7769209EBEF100DB65F0 /* TWGOTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWGOTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA776D209EBEF100DB65F0 /* TWGOTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWGOTUITests.swift; sourceTree = "<group>"; };
 		04AA776F209EBEF100DB65F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsListViewController.swift; sourceTree = "<group>"; };
+		04AA777E209EC34300DB65F0 /* Battle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Battle.swift; sourceTree = "<group>"; };
+		04AA7780209EC50900DB65F0 /* TWServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWServiceManager.swift; sourceTree = "<group>"; };
+		04AA7782209EC7BD00DB65F0 /* TWService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWService.swift; sourceTree = "<group>"; };
+		04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsListViewModel.swift; sourceTree = "<group>"; };
+		04AA778A209ED1BC00DB65F0 /* King.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King.swift; sourceTree = "<group>"; };
+		04AA7790209ED77700DB65F0 /* TWDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,7 +112,13 @@
 			isa = PBXGroup;
 			children = (
 				04AA774D209EBEF000DB65F0 /* AppDelegate.swift */,
-				04AA774F209EBEF000DB65F0 /* ViewController.swift */,
+				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
+				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
+				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
+				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
+				04AA7782209EC7BD00DB65F0 /* TWService.swift */,
+				04AA777E209EC34300DB65F0 /* Battle.swift */,
+				04AA778A209ED1BC00DB65F0 /* King.swift */,
 				04AA7751209EBEF000DB65F0 /* Main.storyboard */,
 				04AA7754209EBEF000DB65F0 /* Assets.xcassets */,
 				04AA7756209EBEF000DB65F0 /* LaunchScreen.storyboard */,
@@ -259,8 +279,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AA7750209EBEF000DB65F0 /* ViewController.swift in Sources */,
+				04AA7781209EC50900DB65F0 /* TWServiceManager.swift in Sources */,
+				04AA777C209EC04E00DB65F0 /* KingsListViewController.swift in Sources */,
 				04AA774E209EBEF000DB65F0 /* AppDelegate.swift in Sources */,
+				04AA7783209EC7BD00DB65F0 /* TWService.swift in Sources */,
+				04AA777F209EC34300DB65F0 /* Battle.swift in Sources */,
+				04AA7785209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
+				04AA7791209ED77700DB65F0 /* TWDataManager.swift in Sources */,
+				04AA778B209ED1BC00DB65F0 /* King.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -269,6 +295,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA7763209EBEF100DB65F0 /* TWGOTTests.swift in Sources */,
+				04AA7786209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +304,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				04AA776E209EBEF100DB65F0 /* TWGOTUITests.swift in Sources */,
+				04AA7787209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
