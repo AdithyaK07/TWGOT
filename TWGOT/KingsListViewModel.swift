@@ -55,6 +55,8 @@ class KingsListViewModel {
             let (r1,r2) = self.calculateUpdatedRatings(withR1: kingsList[eachBattle.attackerKing]!.ratingScore, withR2: kingsList[eachBattle.defenderKing]!.ratingScore, withResult: result)
             kingsList[eachBattle.attackerKing]?.ratingScore = r1
             kingsList[eachBattle.defenderKing]?.ratingScore = r2
+            kingsList[eachBattle.attackerKing]?.battlesList.append(eachBattle)
+            kingsList[eachBattle.defenderKing]?.battlesList.append(eachBattle)
         }
         var kingList = [King]()
         for (_,value) in self.kingsList{
@@ -94,8 +96,4 @@ class KingsListViewModel {
         
     }
 
-                
-    
-    
-    
 }

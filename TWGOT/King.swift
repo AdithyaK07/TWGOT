@@ -14,7 +14,7 @@ class King {
     var attacks : Int = 0
     var defends : Int = 0
     var victories : Int = 0
-    var battlesList : [String] = [String]()
+    var battlesList : [Battle] = [Battle]()
     
     init(withName nameString:String) {
         name = nameString

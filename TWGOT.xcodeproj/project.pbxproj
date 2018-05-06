@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		0471B1CB209F9208006C0D5C /* Greyjoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0471B1CA209F9207006C0D5C /* Greyjoy.png */; };
-		0471B1CD209F9710006C0D5C /* KingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1CC209F9710006C0D5C /* KingDetailViewController.swift */; };
+		0471B1D1209F9854006C0D5C /* KingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */; };
+		0471B1D3209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */; };
+		0471B1D5209FC545006C0D5C /* KingDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */; };
 		04AA774E209EBEF000DB65F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA774D209EBEF000DB65F0 /* AppDelegate.swift */; };
 		04AA7753209EBEF000DB65F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7751209EBEF000DB65F0 /* Main.storyboard */; };
 		04AA7755209EBEF000DB65F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7754209EBEF000DB65F0 /* Assets.xcassets */; };
@@ -54,7 +56,9 @@
 
 /* Begin PBXFileReference section */
 		0471B1CA209F9207006C0D5C /* Greyjoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greyjoy.png; sourceTree = "<group>"; };
-		0471B1CC209F9710006C0D5C /* KingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDetailViewController.swift; sourceTree = "<group>"; };
+		0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDetailViewController.swift; sourceTree = "<group>"; };
+		0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsDetailListTableViewCell.swift; sourceTree = "<group>"; };
+		0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDetailListViewModel.swift; sourceTree = "<group>"; };
 		04AA774A209EBEF000DB65F0 /* TWGOT.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TWGOT.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA774D209EBEF000DB65F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		04AA7752209EBEF000DB65F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,9 +131,11 @@
 			children = (
 				04AA774D209EBEF000DB65F0 /* AppDelegate.swift */,
 				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
-				0471B1CC209F9710006C0D5C /* KingDetailViewController.swift */,
 				04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */,
 				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
+				0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */,
+				0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */,
+				0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */,
 				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
 				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
 				04AA7782209EC7BD00DB65F0 /* TWService.swift */,
@@ -305,8 +311,10 @@
 				04AA7785209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
 				04AA7791209ED77700DB65F0 /* TWDataManager.swift in Sources */,
 				04AA7797209EFA0300DB65F0 /* KingsListTableViewCell.swift in Sources */,
-				0471B1CD209F9710006C0D5C /* KingDetailViewController.swift in Sources */,
+				0471B1D5209FC545006C0D5C /* KingDetailListViewModel.swift in Sources */,
+				0471B1D1209F9854006C0D5C /* KingDetailViewController.swift in Sources */,
 				04AA778B209ED1BC00DB65F0 /* King.swift in Sources */,
+				0471B1D3209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
