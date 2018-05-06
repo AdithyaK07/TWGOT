@@ -11,7 +11,6 @@
 		04AA7753209EBEF000DB65F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7751209EBEF000DB65F0 /* Main.storyboard */; };
 		04AA7755209EBEF000DB65F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7754209EBEF000DB65F0 /* Assets.xcassets */; };
 		04AA7758209EBEF000DB65F0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04AA7756209EBEF000DB65F0 /* LaunchScreen.storyboard */; };
-		04AA7763209EBEF100DB65F0 /* TWGOTTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7762209EBEF100DB65F0 /* TWGOTTests.swift */; };
 		04AA776E209EBEF100DB65F0 /* TWGOTUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA776D209EBEF100DB65F0 /* TWGOTUITests.swift */; };
 		04AA777C209EC04E00DB65F0 /* KingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */; };
 		04AA777F209EC34300DB65F0 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777E209EC34300DB65F0 /* Battle.swift */; };
@@ -22,6 +21,16 @@
 		04AA7787209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */; };
 		04AA778B209ED1BC00DB65F0 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA778A209ED1BC00DB65F0 /* King.swift */; };
 		04AA7791209ED77700DB65F0 /* TWDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7790209ED77700DB65F0 /* TWDataManager.swift */; };
+		04AA7793209EE98D00DB65F0 /* RatingsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7792209EE98D00DB65F0 /* RatingsTest.swift */; };
+		04AA7797209EFA0300DB65F0 /* KingsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */; };
+		04AA7798209EFE4100DB65F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA774D209EBEF000DB65F0 /* AppDelegate.swift */; };
+		04AA7799209EFE4100DB65F0 /* KingsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */; };
+		04AA779A209EFE4100DB65F0 /* KingsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */; };
+		04AA779B209EFE4100DB65F0 /* TWDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7790209ED77700DB65F0 /* TWDataManager.swift */; };
+		04AA779C209EFE4100DB65F0 /* TWServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7780209EC50900DB65F0 /* TWServiceManager.swift */; };
+		04AA779D209EFE4100DB65F0 /* TWService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA7782209EC7BD00DB65F0 /* TWService.swift */; };
+		04AA779E209EFE4100DB65F0 /* Battle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA777E209EC34300DB65F0 /* Battle.swift */; };
+		04AA779F209EFE4100DB65F0 /* King.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04AA778A209ED1BC00DB65F0 /* King.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +58,6 @@
 		04AA7757209EBEF000DB65F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		04AA7759209EBEF000DB65F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AA775E209EBEF000DB65F0 /* TWGOTTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWGOTTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		04AA7762209EBEF100DB65F0 /* TWGOTTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWGOTTests.swift; sourceTree = "<group>"; };
 		04AA7764209EBEF100DB65F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		04AA7769209EBEF100DB65F0 /* TWGOTUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TWGOTUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		04AA776D209EBEF100DB65F0 /* TWGOTUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWGOTUITests.swift; sourceTree = "<group>"; };
@@ -61,6 +69,8 @@
 		04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsListViewModel.swift; sourceTree = "<group>"; };
 		04AA778A209ED1BC00DB65F0 /* King.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = King.swift; sourceTree = "<group>"; };
 		04AA7790209ED77700DB65F0 /* TWDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TWDataManager.swift; sourceTree = "<group>"; };
+		04AA7792209EE98D00DB65F0 /* RatingsTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingsTest.swift; sourceTree = "<group>"; };
+		04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsListTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +124,7 @@
 				04AA774D209EBEF000DB65F0 /* AppDelegate.swift */,
 				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
 				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
+				04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */,
 				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
 				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
 				04AA7782209EC7BD00DB65F0 /* TWService.swift */,
@@ -130,7 +141,7 @@
 		04AA7761209EBEF000DB65F0 /* TWGOTTests */ = {
 			isa = PBXGroup;
 			children = (
-				04AA7762209EBEF100DB65F0 /* TWGOTTests.swift */,
+				04AA7792209EE98D00DB65F0 /* RatingsTest.swift */,
 				04AA7764209EBEF100DB65F0 /* Info.plist */,
 			);
 			path = TWGOTTests;
@@ -286,6 +297,7 @@
 				04AA777F209EC34300DB65F0 /* Battle.swift in Sources */,
 				04AA7785209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
 				04AA7791209ED77700DB65F0 /* TWDataManager.swift in Sources */,
+				04AA7797209EFA0300DB65F0 /* KingsListTableViewCell.swift in Sources */,
 				04AA778B209ED1BC00DB65F0 /* King.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -294,8 +306,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				04AA7763209EBEF100DB65F0 /* TWGOTTests.swift in Sources */,
+				04AA7798209EFE4100DB65F0 /* AppDelegate.swift in Sources */,
+				04AA7799209EFE4100DB65F0 /* KingsListViewController.swift in Sources */,
+				04AA779A209EFE4100DB65F0 /* KingsListTableViewCell.swift in Sources */,
+				04AA779B209EFE4100DB65F0 /* TWDataManager.swift in Sources */,
+				04AA779C209EFE4100DB65F0 /* TWServiceManager.swift in Sources */,
+				04AA779D209EFE4100DB65F0 /* TWService.swift in Sources */,
+				04AA779E209EFE4100DB65F0 /* Battle.swift in Sources */,
+				04AA779F209EFE4100DB65F0 /* King.swift in Sources */,
 				04AA7786209ECE5200DB65F0 /* KingsListViewModel.swift in Sources */,
+				04AA7793209EE98D00DB65F0 /* RatingsTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
