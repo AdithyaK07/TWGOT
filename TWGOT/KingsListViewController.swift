@@ -36,6 +36,8 @@ class KingsListViewController: UIViewController,UITableViewDelegate,UITableViewD
         cell.victoryScoreLabel.text = "\(king.victories)"
         cell.attacksScoreLabel.text = "\(king.attacks)"
         cell.defendsScoreLabel.text =  "\(king.defends)"
+        cell.kingLogo.image = UIImage.init(named: king.name)
+        
         return cell
     }
     

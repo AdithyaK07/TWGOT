@@ -68,7 +68,7 @@ class KingsListViewModel {
             let R2 = Double(truncating: self.computeTransformRating(for: r2) as NSNumber)
             let (e1,e2) = self.calculateExpectedRating(withR1: R1, withR2: R2)
             let (s1,s2) = self.calculateActualScoreForResult(result)
-            let k :Double = 32
+            let k :Double = 32.0
             
             let firstRating = r1+(k * (s1 - e1))
             let secondRating = r2+(k * (s2 - e2))
@@ -84,14 +84,12 @@ class KingsListViewModel {
     }
     func calculateActualScoreForResult(_ result:Int) -> (Double,Double){
         switch result{
-        case 0 :
-            return (0.5,0.5)
         case 1 :
             return (1,0)
         case 2 :
             return (0,1)
         default:
-            return (0,0)
+            return (0.5,0.5)
         }
         
     }
