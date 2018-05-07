@@ -41,6 +41,13 @@ class KingsListViewController: UIViewController,UITableViewDelegate,UITableViewD
         return cell
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let kingDetailViewController = self.storyboard?.instantiateViewController(withIdentifier: "KingDetailView") as! KingDetailViewController
+        kingDetailViewController.kingDetail = kingsListViewModel.kings[indexPath.row]
+        self.navigationController?.pushViewController(kingDetailViewController, animated: true)
+    }
+    
+    
     func updatedDatesource() {
         DispatchQueue.main.async {
             self.kingsListTableView.reloadData()
