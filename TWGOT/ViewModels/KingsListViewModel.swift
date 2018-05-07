@@ -95,7 +95,6 @@ class KingsListViewModel {
         default:
             return (0.5,0.5)
         }
-        
     }
     
     func fetchSigilImageForKingFromAsset(forKing name:String) -> String {

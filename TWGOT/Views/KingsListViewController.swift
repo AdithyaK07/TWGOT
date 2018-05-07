@@ -31,7 +31,7 @@ class KingsListViewController: UIViewController,UITableViewDelegate,UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
       let cell = tableView.dequeueReusableCell(withIdentifier: "kingsRatings", for: indexPath) as! KingsListTableViewCell
        let king = kingsListViewModel.kings[indexPath.row]
-       cell.kingNameLabel.text = king.name
+        cell.kingNameLabel.text = king.name.isEmpty ? " " : king.name
        cell.ratingsLabel.text = String(format: "%.2f", king.ratingScore)
         cell.victoryScoreLabel.text = "\(king.victories)"
         cell.attacksScoreLabel.text = "\(king.attacks)"

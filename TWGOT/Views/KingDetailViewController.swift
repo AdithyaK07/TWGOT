@@ -27,9 +27,12 @@ class KingDetailViewController: UIViewController,UITableViewDelegate,UITableView
     override func viewDidLayoutSubviews() {
         if self.view.frame.width > self.view.frame.height{
            self.baseStackView.axis = .horizontal
+            self.baseStackView.alignment = .top
         }
         else{
             self.baseStackView.axis = .vertical
+            self.baseStackView.alignment = .center
+
         }
     }
     
