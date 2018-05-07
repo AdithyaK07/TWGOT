@@ -22,10 +22,8 @@ class KingDetailViewController: UIViewController,UITableViewDelegate,UITableView
         detailViewModel.kingInfo = self.kingDetail
         detailViewModel.displayDetailInformation()
         self.title = detailViewModel.kingInfo.name
-        self.sigilImageView.image = UIImage.init(named: detailViewModel.kingInfo.name)
-        // Do any additional setup after loading the view.
+        self.sigilImageView.image = UIImage.init(named: detailViewModel.kingInfo.sigilImage!) 
     }
-
     override func viewDidLayoutSubviews() {
         if self.view.frame.width > self.view.frame.height{
            self.baseStackView.axis = .horizontal
@@ -67,7 +65,5 @@ class KingDetailViewController: UIViewController,UITableViewDelegate,UITableView
         }
         return UITableViewCell()
     }
-    
-
 
 }

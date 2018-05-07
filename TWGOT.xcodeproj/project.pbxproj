@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0471B1CB209F9208006C0D5C /* Greyjoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 0471B1CA209F9207006C0D5C /* Greyjoy.png */; };
 		0471B1D1209F9854006C0D5C /* KingDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */; };
 		0471B1D3209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */; };
 		0471B1D5209FC545006C0D5C /* KingDetailListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */; };
@@ -57,7 +56,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0471B1CA209F9207006C0D5C /* Greyjoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Greyjoy.png; sourceTree = "<group>"; };
 		0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDetailViewController.swift; sourceTree = "<group>"; };
 		0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingsDetailListTableViewCell.swift; sourceTree = "<group>"; };
 		0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KingDetailListViewModel.swift; sourceTree = "<group>"; };
@@ -110,6 +108,47 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0471B1DA209FE5DF006C0D5C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				04AA777E209EC34300DB65F0 /* Battle.swift */,
+				04AA778A209ED1BC00DB65F0 /* King.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0471B1DB209FE5F2006C0D5C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
+				04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */,
+				0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */,
+				0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */,
+				0471B1D6209FC928006C0D5C /* KingBattleListCell.swift */,
+				0471B1D8209FDA17006C0D5C /* KingBattleListHeaderCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0471B1DC209FE601006C0D5C /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
+				0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		0471B1DD209FE614006C0D5C /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
+				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
+				04AA7782209EC7BD00DB65F0 /* TWService.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
 		04AA7741209EBEF000DB65F0 = {
 			isa = PBXGroup;
 			children = (
@@ -134,23 +173,13 @@
 			isa = PBXGroup;
 			children = (
 				04AA774D209EBEF000DB65F0 /* AppDelegate.swift */,
-				04AA777B209EC04E00DB65F0 /* KingsListViewController.swift */,
-				04AA7796209EFA0300DB65F0 /* KingsListTableViewCell.swift */,
-				04AA7784209ECE5200DB65F0 /* KingsListViewModel.swift */,
-				0471B1D0209F9854006C0D5C /* KingDetailViewController.swift */,
-				0471B1D2209FBEDF006C0D5C /* KingsDetailListTableViewCell.swift */,
-				0471B1D6209FC928006C0D5C /* KingBattleListCell.swift */,
-				0471B1D8209FDA17006C0D5C /* KingBattleListHeaderCell.swift */,
-				0471B1D4209FC545006C0D5C /* KingDetailListViewModel.swift */,
-				04AA7790209ED77700DB65F0 /* TWDataManager.swift */,
-				04AA7780209EC50900DB65F0 /* TWServiceManager.swift */,
-				04AA7782209EC7BD00DB65F0 /* TWService.swift */,
-				04AA777E209EC34300DB65F0 /* Battle.swift */,
-				04AA778A209ED1BC00DB65F0 /* King.swift */,
+				0471B1DB209FE5F2006C0D5C /* Views */,
+				0471B1DC209FE601006C0D5C /* ViewModels */,
+				0471B1DD209FE614006C0D5C /* Managers */,
+				0471B1DA209FE5DF006C0D5C /* Models */,
 				04AA7751209EBEF000DB65F0 /* Main.storyboard */,
 				04AA7754209EBEF000DB65F0 /* Assets.xcassets */,
 				04AA7756209EBEF000DB65F0 /* LaunchScreen.storyboard */,
-				0471B1CA209F9207006C0D5C /* Greyjoy.png */,
 				04AA7759209EBEF000DB65F0 /* Info.plist */,
 			);
 			path = TWGOT;
@@ -284,7 +313,6 @@
 				04AA7758209EBEF000DB65F0 /* LaunchScreen.storyboard in Resources */,
 				04AA7755209EBEF000DB65F0 /* Assets.xcassets in Resources */,
 				04AA7753209EBEF000DB65F0 /* Main.storyboard in Resources */,
-				0471B1CB209F9208006C0D5C /* Greyjoy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

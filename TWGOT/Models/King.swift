@@ -15,6 +15,7 @@ class King {
     var defends : Int = 0
     var victories : Int = 0
     var battlesList : [Battle] = [Battle]()
+    var sigilImage : String?
     
     init(withName nameString:String) {
         name = nameString

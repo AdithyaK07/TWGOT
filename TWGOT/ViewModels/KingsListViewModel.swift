@@ -35,9 +35,11 @@ class KingsListViewModel {
         for eachBattle in self.battles{
             if !kingsList.keys.contains(eachBattle.attackerKing) {
                 kingsList[eachBattle.attackerKing] = King.init(withName: eachBattle.attackerKing)
+                kingsList[eachBattle.attackerKing]?.sigilImage = self.fetchSigilImageForKingFromAsset(forKing: kingsList[eachBattle.attackerKing]!.name)
             }
             if !kingsList.keys.contains(eachBattle.defenderKing){
                 kingsList[eachBattle.defenderKing] = King.init(withName: eachBattle.defenderKing)
+                kingsList[eachBattle.defenderKing]?.sigilImage = self.fetchSigilImageForKingFromAsset(forKing: kingsList[eachBattle.defenderKing]!.name)
             }
             kingsList[eachBattle.attackerKing]?.attacks += 1
             kingsList[eachBattle.defenderKing]?.defends += 1
@@ -95,5 +97,15 @@ class KingsListViewModel {
         }
         
     }
-
+    
+    func fetchSigilImageForKingFromAsset(forKing name:String) -> String {
+        switch name{
+        case "Balon/Euron Greyjoy":
+            return "Greyjoy"
+        case "Joffrey/Tommen Baratheon":
+            return "Joffrey"
+        default :
+            return name.isEmpty ? "Placeholder" : name
+        }
+    }
 }
